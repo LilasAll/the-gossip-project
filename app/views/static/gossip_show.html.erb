@@ -2,25 +2,7 @@
 <html>
 
 <head>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/acceuil">Acceuil</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/team">Notre équipe<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/contact">Contacts<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/welcome/:name">Ma page de bienvenue<span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
 	
 </head>
 
@@ -33,7 +15,7 @@
     <h3>Titre : <%= @title %></h3>
     <h5>Auteur : <%= @author %> <br/> 
     Contenu du gossip : <%= @content %> <br/> 
-    Tu veux cheker la page de l'auteur de ce potin ? <button type="button" class="btn btn-info"><a class="text-white" href="/user/<%= @user_id %>"> - clique ici -</a></button></h5>
+    Tu veux cheker la page de l'auteur de ce potin ?    <a class="text-white btn btn-info" href="/user/<%= @user_id %>" role="button" aria-pressed="true">clique ici</a>
   </div>
 </div>
 </body>

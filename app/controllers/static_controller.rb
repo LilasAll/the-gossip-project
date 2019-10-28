@@ -13,7 +13,7 @@ class StaticController < ApplicationController
   end
 
   def gossip_show
-  	puts params[:id]
+  	#puts params[:id]
   	gossip = Gossip.find(params[:id])
   	@id = gossip.id
   	@title = gossip.title
