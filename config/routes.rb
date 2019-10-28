@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get '/acceuil', to: 'static#acceuil'
 
   get 'user/:id', to: 'static#user_show'
+
+  get '/', to: 'static#home'
  
  end

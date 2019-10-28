@@ -21,16 +21,21 @@
     </ul>
   </div>
 </nav>
-	<h1>Voici le potin n°: <%= @id %> </h1>
+	
 </head>
 
 <body>
-	
-  <h3>Titre : <%= @title %></h3>
-  <h5>Auteur : <%= @author %> <br/> 
-  Contenu du gossip : <%= @content %> <br/> 
-  Tu veux cheker la page de l'auteur de ce potin ? <a href="/user/<%= @user_id %>"> - clique ici -</a></h5>
-
+<div class="card">
+  <div class="card-header">
+    <h1>Voici le potin n°: <%= @id %> </h1>
+  </div>
+  <div class="card-body">	
+    <h3>Titre : <%= @title %></h3>
+    <h5>Auteur : <%= @author %> <br/> 
+    Contenu du gossip : <%= @content %> <br/> 
+    Tu veux cheker la page de l'auteur de ce potin ? <button type="button" class="btn btn-info"><a class="text-white" href="/user/<%= @user_id %>"> - clique ici -</a></button></h5>
+  </div>
+</div>
 </body>
 
 </html>

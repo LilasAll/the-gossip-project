@@ -25,20 +25,17 @@
 </head>
 
 <body>
-	<div class="card">
+ <div class="card text-center">
   <div class="card-header">
-  <h1>Voici la page perso de : <%= @first_name %> <%= @last_name %> </h1>
+    <h1>Bienvenue sur The Gossip Project Website</h1>
   </div>
-    <div class="card-body"> 
-      <img src="http://parkipourlavie.com/wp-content/uploads/2014/03/grinning_happy_dog.jpg" class="rounded mx-auto d-block">
-      <h3>Nom : <%= @first_name %> <%= @last_name %></h3>
-      <h5>Description perso : <%= @description %> <br/> 
-      Email : <%= @email %> <br/> 
-      Age : <%= @age %> <br/> 
-      Adresse (ville et zip_code) : <%= @city_name %> <%= @zip_code %></h5> 
-    </div>
+  <div class="card-body">
+    <h2 class="card-title">Tu veux découvrir tous nos potins croustillants<br/>
+    <p class="card-text">Allez petit curieux clique sur le lien ci-dessous pour te rendre à l'acceuil</p></h2>
+    <a href="/acceuil" class="btn btn-primary">C'est parti</a>
   </div>
 
+</div>
 </body>
 
 </html>

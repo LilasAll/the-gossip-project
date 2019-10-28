@@ -21,16 +21,25 @@
     </ul>
   </div>
 </nav>
-<h1>Bienvenue sur notre site de Gossips petit voyou!</h1>
+
 </head>
 
 <body>
+  <div class="card">
+  <div class="card-header">
+    <h1>Bienvenue sur The Gossip Project Website</h1>
+  </div>
   <h2>Ci-dessous la liste des gossips (autheur et titre): </h2>
-	<% Gossip.all.each_with_index do |gossip, index| %>
-    <p><strong>Auteur : <%= gossip.user.first_name%></strong></p>
-    <p>Titre : <%= gossip.title%></p>
-    <p>Lien du potin : <a href="/gossip/<%= gossip.id %>"> - clique ici -</a></p>
-  <% end %>
+    <div class="card-body"> 
+    	<% Gossip.all.each_with_index do |gossip, index| %>
+        <li class="list-group-item">
+          <p><strong>Auteur : <%= gossip.user.first_name%></strong></p>
+          <p>Titre : <%= gossip.title%></p>
+          <p>Lien du potin : <button type="button" class="btn btn-info"><a class="text-white" href="/gossip/<%= gossip.id %>"> - clique ici -</a></button></p>
+        </li>
+      <% end %>
+    </div>
+  </div>
 </body>
 
 </html>

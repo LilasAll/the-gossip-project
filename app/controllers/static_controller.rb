@@ -42,4 +42,8 @@ class StaticController < ApplicationController
 		#@zip_code = user.city.zip_code   	
   end
 
+  def home
+
+  end
+
 end
