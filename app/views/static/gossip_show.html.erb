@@ -21,22 +21,16 @@
     </ul>
   </div>
 </nav>
-	<h1>LA SUPER TEAM</h1>
+	<h1>Voici le potin n°: <%= @id %> </h1>
 </head>
 
 <body>
-	<h3>Voici notre équipe : </h3>
 	
-  <p> </p>
-
-	<h5> 
-  LILAS : jeune lilloise de 22 ans passioné d'agriculture </br>
-	MAHAUT : fraichement débarquée sur Lille pour profiter du beau temps </br>
-	THEO : le plus jeune de nos moussaillons et le seul représentant masculin </br>
-	OMA : l'ultime moussaillone !! </br>
-  </h5>
+  <h3>Titre : <%= @title %></h3>
+  <h5>Auteur : <%= @author %> <br/> 
+  Contenu du gossip : <%= @content %> <br/> 
+  Tu veux cheker la page de l'auteur de ce potin ? <a href="/user/<%= @user_id %>"> - clique ici -</a></h5>
 
 </body>
 
 </html>
-

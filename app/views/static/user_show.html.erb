@@ -21,22 +21,18 @@
     </ul>
   </div>
 </nav>
-	<h1>LA SUPER TEAM</h1>
+	<h1>Voici la page perso de : <%= @first_name %> <%= @last_name %> </h1>
 </head>
 
 <body>
-	<h3>Voici notre équipe : </h3>
 	
-  <p> </p>
+  <h3>Nom : <%= @first_name %> <%= @last_name %></h3>
+  <h5>Description perso : <%= @description %> <br/> 
+  Email : <%= @email %> <br/> 
+  Age : <%= @age %> <br/> 
+  Adresse (ville et zip_code) : <%= @city_name %> <%= @zip_code %></h5> 
 
-	<h5> 
-  LILAS : jeune lilloise de 22 ans passioné d'agriculture </br>
-	MAHAUT : fraichement débarquée sur Lille pour profiter du beau temps </br>
-	THEO : le plus jeune de nos moussaillons et le seul représentant masculin </br>
-	OMA : l'ultime moussaillone !! </br>
-  </h5>
 
 </body>
 
 </html>
-

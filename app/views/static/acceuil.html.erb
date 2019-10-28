@@ -21,21 +21,16 @@
     </ul>
   </div>
 </nav>
-	<h1>LA SUPER TEAM</h1>
+<h1>Bienvenue sur notre site de Gossips petit voyou!</h1>
 </head>
 
 <body>
-	<h3>Voici notre équipe : </h3>
-	
-  <p> </p>
-
-	<h5> 
-  LILAS : jeune lilloise de 22 ans passioné d'agriculture </br>
-	MAHAUT : fraichement débarquée sur Lille pour profiter du beau temps </br>
-	THEO : le plus jeune de nos moussaillons et le seul représentant masculin </br>
-	OMA : l'ultime moussaillone !! </br>
-  </h5>
-
+  <h2>Ci-dessous la liste des gossips (autheur et titre): </h2>
+	<% Gossip.all.each_with_index do |gossip, index| %>
+    <p><strong>Auteur : <%= gossip.user.first_name%></strong></p>
+    <p>Titre : <%= gossip.title%></p>
+    <p>Lien du potin : <a href="/gossip/<%= gossip.id %>"> - clique ici -</a></p>
+  <% end %>
 </body>
 
 </html>
